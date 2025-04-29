@@ -38,9 +38,19 @@
 
 									<p>As part of <a href="./planting-windows.html">my quest</a> to automate tasks in my garden, I wanted to create an irrigation controller that I could control through Wi-Fi.</p>
 
-									<span class="image main"><img src="../images/irrigation-01.jpg" alt="" /></span>
-
 									<p>This task turned out to be quite challenging as the requirements set out for myself were ambitious: I wanted to support both a fixed-pressure water supply from my house and variable-pressure rain barrel connected at the same time. As such, this projects is not yet completed.</p>
+
+									<p>I am currently in the process of Designing a custom PCB, a (mostly) finished screenshot of which is below. The PCB accepts 12V and allows an ESP32 to control 3 relays, read pulses from a hall effect flow sensor, and read pressure from a 4-20mA pressure transducer.</p>
+
+									<span class="image main"><img src="https://github.com/Verdagraph/Drip/blob/main/docs/pcb.png" alt="" /></span>
+
+									<p>I'm also in the process of rewriting the firmware with what I've learned working professionally on embedded firmware. The firmware now has a defined state machine, pictured below, and is organized into manager classes which encapsulate all the application logic.</p>
+
+									<span class="image main"><img src="https://github.com/Verdagraph/Drip/blob/main/docs/fsm.excalidraw.png" alt="" /></span>
+
+									Once I have a physical prototype assembed, there will be a picture of that here. For now, here's an initial prototype that was built to validate a dispense process using one valve after the other.
+
+									<span class="image main"><img src="../images/irrigation-01.jpg" alt="" /></span>
 
 									<p>The repository hosting the resources for this project can be found <a href="https://github.com/Verdagraph/Drip">here.</a></p>
 								</section>
